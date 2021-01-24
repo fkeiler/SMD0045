@@ -1,0 +1,44 @@
+<html lang="pt-BR">
+<head>
+    <title>Botão Desparecedor!</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #botaoDesaparecedor {
+            border: none;
+            padding: .5em 1em;
+            text-decoration: none;
+            background: #ec4141;
+            color: #ffffff;
+            border-radius: .1em;
+            box-shadow: 0 0 1em #000;
+            font-family: sans-serif;
+            font-size: 20vmin;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: all .4s;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        #botaoDesaparecedor:active {
+            background: #ca1e1e;
+            box-shadow: 0 0 .5em #000;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <button id="botaoDesaparecedor" onclick="commitDie(this)">Clique-me!</button>
+    <script>
+        function commitDie(elemento){
+            elemento.style.opacity = '0'; // Adicionar uma animaçãozinha legal antes de sumir
+            setTimeout(() => { elemento.remove() }, 400);
+        }
+    </script>
+</body>
+</html>
