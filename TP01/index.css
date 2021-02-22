@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-header {
+    align-items: flex-start;
+    background: linear-gradient(to top, rgb(54, 54, 189), rgb(93, 236, 236));
+    border-radius: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60vmin;
+    margin: 1em auto;
+    padding: 1rem;
+    width: 100vmin;
+}
+.main-header h1, .main-header h2 {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#post-area {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    max-width: 80ch;
+}
+#post-area > input[type=text] {
+    border: 1px solid #0003;
+    border-radius: 1ch;
+    font-size: 1rem;
+    margin: .5em 0;
+    padding: .1em 1ch;
+    width: 80%;
+}
+#post-area > textarea {
+    border: 1px solid #0003;
+    border-radius: 1ch;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: .5em;
+    width: 100%;
+}
+#post-area > button {
+    border: none;
+    border-radius: .5em;
+    float: right;
+    margin: .5em;
+    margin-right: 0;
+    padding: .5em 1em;
+}
+
+#postagens {
+    max-width: 75ch;
+    margin: 0 auto;
+}
+.postagem {
+    border-radius: .5em;
+    box-shadow: 2px 0 1em #0003;
+    margin: 1em 0;
+    max-width: 75ch;
+    padding: .5ch 1ch;
+}
+.postagem h3 {
+    font-family: sans-serif;
+    margin-top: .5em;
+}
+.postagem p {
+    font-family: serif;
+}
