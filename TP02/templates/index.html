@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrível supremo excelente somador de 2</title>
+    <style>
+        @keyframes rainbow {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 200% 50%;  
+            }
+        }
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: black;
+            color: white;
+
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            animation: rainbow 5s linear infinite;
+            background: linear-gradient(to right, #CC99C9, #9EC1CF, #9EE09E, #FDFD97, #FEB144, #FF6663, #FEB144, #FDFD97, #9ee09e, #9EC1CF, #CC99C9) repeat;
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Super híper somador de 2</h1>
+    <form action="/resultado" method="POST">
+        <label for="num">Número a ser somado a 2:</label>
+        <input type="number" required name="num" id="num">
+        <input type="submit">
+    </form>
+</body>
+</html>
